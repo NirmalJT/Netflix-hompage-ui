@@ -252,7 +252,8 @@ small {
   }
   .text {
     width: 30vw;
-    top: 120px;
+    top: 90px;
+    /* text-align: center; */
   }
   .text > :nth-child(1) {
     font-size: 60px;
@@ -273,7 +274,7 @@ small {
   }
 
   .text > :nth-child(1) {
-    font-size: 40px;
+    font-size: 35px;
   }
   .text > :nth-child(2) {
     font-size: 25px;
@@ -318,5 +319,65 @@ small {
   .text {
     width: 65vw;
     top: 0px;
+  }
+}
+@media screen and (max-width: 830px) {
+  footer {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .faq h1 {
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  footer {
+    padding: 30px;
+    margin-top: 30px;
+  }
+  .links {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .QusTion {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .secimg img {
+    width: 305px;
+  }
+  .navbar{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .hero > :first-child {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .secimg video {
+    position: relative;
+    left: 2px;
+    bottom: 191px;
+    z-index: -1;
+    width: 261px;
+  }
+  .text3rd > :nth-child(1) {
+    font-size: 30px;
+  }
+  .text2nd > :nth-child(1) {
+    font-size: 30px;
+  }
+  .text4th > :nth-child(1) {
+    font-size: 30px;
+  }
+
+  .text > :nth-child(1) {
+    font-size: 20px;
+  }
+  .text > :nth-child(2) {
+    font-size: 15px;
   }
 }
