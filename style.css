@@ -401,6 +401,12 @@ small {
   .hero button {
     padding: 9px 10px;
   }
+  .text {
+    text-align: center;
+  }
+  .foter {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -419,11 +425,5 @@ small {
   .faqbox {
     height: 55px;
     font-size: 10px;
-  }
-  .text{
-    text-align: center;
-  }
-  .foter{
-    text-align: center;
   }
 }
