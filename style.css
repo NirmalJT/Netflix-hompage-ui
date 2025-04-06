@@ -80,6 +80,7 @@ body {
   position: relative;
   gap: 20px;
   padding-top: 200px;
+  min-width: 300px;
 }
 .hero > :first-child {
   font-size: 50px;
@@ -357,8 +358,7 @@ small {
     width: 90px;
   }
   .hero {
-    padding: 37px;
-    padding-top: 100px;
+    padding: 100px 6px;
   }
   .lightbtn {
     padding: 5px 0px;
@@ -404,11 +404,26 @@ small {
 }
 
 @media screen and (max-width: 425px) {
-  .hero {
-    padding-top: 140px;
+  .hero > :first-child {
+    font-size: 25px;
+  }
+  .hero input {
+    width: 200px;
+  }
+  .hero > :nth-child(2) {
+    font-size: 15px;
+  }
+  .hero > :nth-child(3) {
+    font-size: 15px;
   }
   .faqbox {
     height: 55px;
     font-size: 10px;
+  }
+  .text{
+    text-align: center;
+  }
+  .foter{
+    text-align: center;
   }
 }
