@@ -55,6 +55,9 @@ body {
   border-radius: 4px;
   font-weight: bolder;
 }
+.lightbtn > option {
+  color: black;
+}
 .sm-redbtn {
   background-color: red;
   color: white;
@@ -64,9 +67,7 @@ body {
   border: none;
   font-weight: bold;
 }
-.lightbtn:hover {
-  background-color: rgb(98, 93, 93);
-}
+
 .sm-redbtn:hover {
   background-color: rgb(225, 95, 95);
 }
@@ -123,7 +124,6 @@ body {
 
 .first {
   display: flex;
-  margin: auto;
   flex-direction: row;
   max-width: 70vw;
   position: relative;
@@ -132,7 +132,9 @@ body {
 .text {
   color: white;
   position: relative;
-  top: 120px;
+  /* top: 120px; */
+  width: 50vw;
+  min-width: 0vw;
 }
 .text > :nth-child(1) {
   font-size: 46px;
@@ -153,16 +155,19 @@ body {
 }
 section {
   height: 460px;
+  display: flex;
+  justify-content: center;
 }
 
-.faq  h1{
+.faq h1 {
   text-align: center;
   font-size: 50px;
   margin-top: 20px;
 }
-.faqbox{
-  transition: all 1s ease-in-out;  
+.faqbox {
+  transition: all 1s ease-in-out;
   width: 60vw;
+
   height: 75px;
   background-color: rgb(49, 47, 47);
   display: flex;
@@ -171,55 +176,48 @@ section {
   border-radius: 5px;
   cursor: pointer;
 }
-.faqbox h2{
-  
+.faqbox h2 {
   margin-left: 20px;
-font-weight: lighter;
-
+  font-weight: lighter;
 }
-.faqbox:hover{
+.faqbox:hover {
   background-color: rgb(94, 90, 90);
 }
-.faq svg{
+.faq svg {
   filter: invert(1);
   padding-right: 20px;
 }
-.faqcontainer{
+.faqcontainer {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
 }
-.faqsection{
-
+.faqsection {
   height: 600px;
-
 }
-footer{
+footer {
   height: 400px;
 }
-.links{
-  
+.links {
   display: flex;
-  
+
   gap: 100px;
 }
-.link{
+.link {
   display: flex;
   flex-direction: column;
   gap: 20px;
- 
 }
-footer{
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-small{
- display: block;
- margin-bottom: 40px;
- font-size: medium;
+small {
+  display: block;
+  margin-bottom: 40px;
+  font-size: medium;
 }
 .text3rd > :nth-child(1) {
   font-size: 40px;
@@ -230,78 +228,95 @@ small{
 .text4th > :nth-child(1) {
   font-size: 33px;
 }
-@media screen and (max-width: 1300px) {
-  .hero {
-    padding-top: 100px;
-  }
-  .hero > :first-child {
-    font-size: 10vh;
-    text-align: center;
-  }
-  .hero > :nth-child(2) {
-    font-size: 20px;
-    font-weight: 430;
-    text-align: center;
-  }
-  .hero > :nth-child(3) {
-    font-size: 15px;
-    text-align: center;
-  }
-  .navbar {
+@media screen and (max-width: 2720px) {
+  .secimg {
     display: flex;
-    flex-wrap: wrap;
-    width: 60vw;
-  }
-  .logo img {
-    width: 100px;
-    padding-left: 29px;
-  }
-  .btn {
-    display: flex;
-  }
-  .lightbtn {
-    padding: 4px 20px;
-    font-size: 10px;
-  }
-  .sm-redbtn {
-    padding: 4px 15px;
-    font-size: 10px;
-  }
-  .input {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
   }
-  .hero button {
-    padding: 8px 18px;
-    font-size: 15px;
-  }
 
-  .hero input {
-    height: 40px;
-    width: 230px;
+  .secimg video {
+    position: relative;
+    left: 35px;
+    bottom: 373px;
+    z-index: -1;
   }
-  .first {
-    flex-wrap: wrap;
-    max-width: 60vw;
-    display: flex;
-    gap: 0px;
+  .text3rd > :nth-child(1) {
+    font-size: 60px;
+  }
+  .text2nd > :nth-child(1) {
+    font-size: 64px;
+  }
+  .text4th > :nth-child(1) {
+    font-size: 63px;
   }
   .text {
-    top: 0px;
-    /* width: 65vw; */
+    width: 30vw;
+    top: 120px;
   }
+  .text > :nth-child(1) {
+    font-size: 60px;
+  }
+  .text > :nth-child(2) {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 2000px) {
+  .text3rd > :nth-child(1) {
+    font-size: 40px;
+  }
+  .text2nd > :nth-child(1) {
+    font-size: 40px;
+  }
+  .text4th > :nth-child(1) {
+    font-size: 40px;
+  }
+
   .text > :nth-child(1) {
     font-size: 40px;
   }
   .text > :nth-child(2) {
-    font-size: 20px;
+    font-size: 25px;
   }
-  .secimg vide0 {
-    /* width: 300px; */
+}
+@media screen and (max-width: 1500px) {
+  .first {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap: 30px;
   }
   section {
-    height: min-content;
+    height: fit-content;
+  }
+
+  .secImg_video1st {
+    position: relative;
+    top: 100px;
+  }
+  .text {
+    width: 32vw;
+    top: 0px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .hero {
+    width: 55vw;
+    text-align: center;
+    margin: auto;
+    padding-top: 70px;
+    width: fit-content;
+  }
+
+  section {
+    height: fit-content;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .text {
+    width: 65vw;
+    top: 0px;
   }
 }
